@@ -46,7 +46,5 @@ The core models are defined in `src/models.py`:
 3. **Deal Construction**: Extracted data is mapped to the internal models to create hot deal packages.
 4. **Review & Export**: Review the generated deals and export or use them for marketing.
 
-## Example Usage
 
-You can use the models to construct a hot deal programmatically:
 
