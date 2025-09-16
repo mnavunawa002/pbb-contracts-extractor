@@ -1,0 +1,22 @@
+# ignore env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+src/*.env
+
+# ignore node_modules
+node_modules
+
+# ignore python virtual environment
+venv
+
+# ignore python cache
+__pycache__
+
+# ignore python build
+build
+
+# ignore python dist

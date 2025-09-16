@@ -1,0 +1,7 @@
+pydantic
+python-dotenv
+streamlit
+google-generativeai
+requests
+aiohttp
+pandas
