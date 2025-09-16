@@ -124,7 +124,9 @@ class GoogleGeminiClient:
             - Marketing fields must be attractive, persuasive, and aligned with travel/holiday promotions.
             - Inclusions must be classified into the proper category.
             - For each deal, check if meal plans are included or if they have to added with additional costs. In any case, if meal plans apply, include them in the deal.
-            - Hot deals are generated from special offers, and wedding packages.
+            - Hot deals are generated from special offers, and wedding packages. Sometimes there can be multiple types of wedding packages, so ensure
+            not to combine them in the same deal. If there are multiple types of wedding packages, create multiple deals. E.g vowel renewal, wedding, etc.
+            - If there are multiple types of special offers, create multiple deals. Dont combine offers when the duration is different.
 
             3. **Creativity**
             - Make the marketing copy engaging and aligned with travel campaigns.
