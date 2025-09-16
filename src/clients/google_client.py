@@ -11,7 +11,7 @@ load_dotenv()
 class GoogleGeminiClient:
     def __init__(self):
         configure(api_key=os.getenv("GOOGLE_API_KEY"))
-        self.model_name = "gemini-1.5-flash"
+        self.model_name = "gemini-1.5-pro"
         self.model = GenerativeModel(self.model_name)
 
     def upload_pdf(self, file_bytes, display_name="Uploaded PDF"):
@@ -120,7 +120,7 @@ class GoogleGeminiClient:
             - Calculate `savings_percentage` as `(original - discounted) / original * 100`.
             - Marketing fields must be attractive, persuasive, and aligned with travel/holiday promotions.
             - Inclusions must be classified into the proper category.
-            - If no meal plans/special offers/wedding packages exist, return empty arrays. Meal plans are not hot deals themselves, but may incur additional costs. Include them in meal plans if applicable.
+            - For each deal, check if meal plans are included or if they have to added with additional costs. In any case, if meal plans apply, include them in the deal.
             - Hot deals are generated from special offers, and wedding packages.
 
             3. **Creativity**
