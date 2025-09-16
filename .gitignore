@@ -11,7 +11,7 @@ src/*.env
 node_modules
 
 # ignore python virtual environment
-venv
+env
 
 # ignore python cache
 __pycache__
