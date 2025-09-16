@@ -120,7 +120,7 @@ class GoogleGeminiClient:
             - Calculate `savings_percentage` as `(original - discounted) / original * 100`.
             - Marketing fields must be attractive, persuasive, and aligned with travel/holiday promotions.
             - Inclusions must be classified into the proper category.
-            - If no meal plans/special offers/wedding packages exist, return empty arrays.
+            - If no meal plans/special offers/wedding packages exist, return empty arrays. Meal plans are not hot deals themselves, but may incur additional costs. Include them in meal plans if applicable.
             - Hot deals are generated from special offers, and wedding packages.
 
             3. **Creativity**
