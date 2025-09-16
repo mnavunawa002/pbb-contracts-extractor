@@ -13,6 +13,7 @@ uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
 if uploaded_file is not None:
     uploaded_file = google_client.upload_pdf(uploaded_file.read())
+    file_name = getattr(uploaded_file, "name", None)
     st.write("File uploaded successfully")
     st.write(uploaded_file)
     with st.spinner("Extracting hot deal packages..."):
@@ -113,7 +114,7 @@ if uploaded_file is not None:
           st.download_button(
               label="Download as JSON",
               data=json.dumps({"hot_deals": hot_deals_list}, indent=2),
-              file_name="hot_deals.json",
+              file_name=f"{file_name}_hot_deals.json",
               mime="application/json",
               type="primary",  # This makes the button red in Streamlit
           )
