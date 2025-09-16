@@ -42,6 +42,9 @@ class GoogleGeminiClient:
             - Inclusions such as meals, transfers, activities, honeymoon bonuses.
             - Wedding or event packages.
 
+            [Note]: Hot deal packages are generated from special offers, and wedding packages. Special offers and wedding packages
+            cannot be combined in the same deal. If its a special offer, make the wedding_packages array empty and vice versa.
+
             Your task is to extract structured deal data and generate attractive marketing packages. 
             Follow these rules:
 

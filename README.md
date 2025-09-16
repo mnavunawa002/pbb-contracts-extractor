@@ -45,6 +45,3 @@ The core models are defined in `src/models.py`:
 2. **AI Extraction**: The tool uses AI to parse and extract rates, inclusions, and other relevant details from the PDF.
 3. **Deal Construction**: Extracted data is mapped to the internal models to create hot deal packages.
 4. **Review & Export**: Review the generated deals and export or use them for marketing.
-
-
-
