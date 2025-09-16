@@ -112,7 +112,7 @@ if uploaded_file is not None:
           
           st.download_button(
               label="Download as JSON",
-              data=json.dumps(hot_deals_list, indent=2),
+              data=json.dumps({"hot_deals": hot_deals_list}, indent=2),
               file_name="hot_deals.json",
               mime="application/json",
               type="primary",  # This makes the button red in Streamlit
